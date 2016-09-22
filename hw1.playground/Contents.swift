@@ -24,7 +24,7 @@ class Words {
 //: ### variables the same type? If not, why?
     
 
-//: Yes, they are the same type. The instance variables are implicitly unwrapped optionals, so they are assumed to be non nil. The String **init** function variables are just a regular optional with type Optional<wrapped>. Under the hood, both of these optionals have the same type: Optional<wrapped>. From Swift reference guide, "unwrapped optionals have the same Optional<Wrapped> type as optional values".
+//: No, they are not the same type. The instance variables are implicitly unwrapped optionals, so they are assumed to be non nil. The String **init** function variables are just a regular optional with type Optional<wrapped>. If you print the typeof each of these you can see the difference between the instance variables and the parameters passed into the function (ImplicitlyUnwrappedOptional vs Optional).
 
 
 //: ## Q2: Variable Types and Function Types
